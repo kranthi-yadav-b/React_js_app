@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>RESPONSIVE LAYOUT USING BOOTSTRAP</title>
+    <style>
+      .Toggle{
+        margin:150px;
+      }
+      .CardsBlock{
+        margin-top:50px;
+      }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+</head>
+<body>
+     <div class="Toggle">
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Basic Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label for="Name" value="Name">Name:</label>
+                <p><input type="text" name="firstname" size="40" placeholder="Enter your Full Name"></p><br>
+                <label for="Email" value="Name">EmailID:</label>
+                <p><input type="text" name="Email" size="40" placeholder="Enter your Email ID"></p>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Click to Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel2">Final Submit</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label for="Mobile" value="Name">Aadhar Number:</label>
+                <p><input type="text" name="MobileNumber" size="40" placeholder="Enter your Aadhar Number"></p><br>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-warning" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Previous form</button>
+              <button class="btn btn-info" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-grid gap-2">
+         <a class="btn btn-outline-dark btn-lg" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sign In </a>
+       </div>
+    </div>
+
+    <div class="container-fluid">
+    <table class="table table-info table-hover">
+      <thead>
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry the Bird</td>
+          <td>Parak Agarwal</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container-fluid">
+    <table class="table table-bordered table-hover table-success">
+      <thead>
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry the Bird</td>
+          <td>Parak Agarwal</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <img class="rounded mx-auto d-block"  src="../Images/pulsarns200.jpg" alt="gixer"> <br><br>
+    <p style="text-align:center;font-size: 20px;">Rounded and centered</p>
+    <img class="rounded float-start"  src="../Images/pulsarns200.jpg" alt="gixer"> 
+    <img class="rounded float-end"  src="../Images/pulsarns200.jpg" alt="gixer">
+    <img src="../Images/hornet.jpg" class="rounded-circle" alt="...">
+
+
+    
+  </div>
+  <div class="CardsBlock">
+    <div class="card" style="width: 46rem;">
+      <img src="../Images/Azadi.jpg" class="card-img-top" alt="Independence">
+      <div class="card-body">
+        <h5 class="card-title">Azadi Ka Amrit Mahotsav</h5>
+        <p class="card-text">
+          Azadi Ka Amrit Mahotsav is an initiative of the Government of India to celebrate and commemorate 75 years of independence and the glorious history of it's people, culture and achievements.
+          
+          This Mahotsav is dedicated to the people of India who have not only been instrumental in bringing India thus far in its evolutionary journey but also hold within them the power and potential to enable Prime Minister Narendra Modi's vision of activating India 2.0, fuelled by the spirit of Aatmanirbhar Bharat.
+          
+          The official journey of Azadi Ka Amrit Mahotsav commenced on 12th March 2021 which started a 75-week countdown to our 75th anniversary of independence and will end post a year on 15th August 2023. Following are the five themes of Azadi Ka Amrit Mahotsav.</p>
+        <a href="#" class="btn btn-success">Click here to Participate</a>
+      </div>
+    </div><br>
+    <div class="card" style="width: 46rem;">
+      <img src="../Images/hornet.jpg" class="card-img-top" alt="Hornet">
+      <div class="card-body">
+        <h5 class="card-title">Honda Hornet</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Bikes</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">Buy Now</a>
+        <a href="#" class="card-link">Not Interested</a>
+      </div>
+    </div>
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
